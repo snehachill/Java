@@ -22,6 +22,8 @@ public class SpiralMatrix {
             //left
             for(int i=EndRow-1;i>=startRow + 1;i--){
                 System.out.println(num[startCol][i]);
+                
+            break;
             }
         startCol++;
         startRow++;
