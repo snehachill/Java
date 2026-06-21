@@ -6,6 +6,7 @@ public class StringBuilderExample {
             sb.append(ch);
         }
 
-        System.out.print(sb);      
+        System.out.println(sb);
+        System.out.println(sb.length());      
     }
 }
