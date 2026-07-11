@@ -1,4 +1,5 @@
 public class Sudoku {
+    //function to check if it is safe to place digit in the cell
     public static boolean isSafe(int sudoku[][],int row,int col,int digit){
         //for row--row fixed
         for(int j=0;j<9;j++){
