@@ -34,6 +34,10 @@ public class AddMid {
 
 
     public void AddMidNode(int idx,int data){
+        if(idx==0){
+            Addfirst(data);
+            return;
+        }
        Node newNode = new Node(data);
        Node temp=head;
        int i=0;
