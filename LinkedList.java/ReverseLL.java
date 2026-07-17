@@ -50,7 +50,7 @@ public class ReverseLL {
             list.Addfirst(10);
             list.Addfirst(20);
             list.print();
-            list.Reverse();
+           
             
         }
 }
