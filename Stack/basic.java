@@ -9,10 +9,12 @@ public class basic {
             return list.size() == 0;
         }
 
+        //push
         public static void push(int data) {
             list.add(data); // Adds to the end (top of stack)
         }
 
+        //pop
         public static int pop() {
             if (isEmpty()) {
                 return -1; // Guard against empty stack
@@ -21,7 +23,7 @@ public class basic {
             list.remove(list.size() - 1); // Removes top element
             return top;
         }
-
+    
         public static int peek() {
             if (isEmpty()) {
                 return -1; // Guard against empty stack
