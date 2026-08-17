@@ -12,6 +12,7 @@ public class ActivitySelection {
         ans.add(0);
         int LastEnd=finish[0];
 
+        // Loop through the activities to select the maximum number of non-overlapping activities
         for(int i=0;i<finish.length;i++){
             if(start[i]>=LastEnd){
                 Max++;
