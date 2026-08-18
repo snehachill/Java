@@ -15,12 +15,12 @@ public class FractionalKnapsack {
         Arrays.sort(ratio, Comparator.comparingDouble(o -> o[1]));
         int capacity=W;
         int finalValue=0;
-        for(int i=ratio.length-1;i>=0;i--){
+        for(int i=ratio.length-1;i>=0;i--){//full knapsack
            int idx=(int)ratio[i][0];
            if(weights[idx]<=capacity){
               finalValue+=values[idx];
               capacity-=weights[idx];
-           }else{
+           }else{//fractional knapsack
               finalValue+=ratio[i][1]*capacity;
               capacity=0;
               break;
