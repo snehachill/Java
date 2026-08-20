@@ -8,7 +8,7 @@ public class MinabsoluteDIff {
        Arrays.sort(B);
        
        int minDiff = 0;
-
+       // Calculate the minimum absolute difference
        for(int i=0;i<A.length;i++){
             minDiff += Math.abs(A[i]-B[i]);
         }
